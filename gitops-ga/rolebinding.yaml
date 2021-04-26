@@ -2,7 +2,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: apache-app-role-binding
-  namespace: apache-ns
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
