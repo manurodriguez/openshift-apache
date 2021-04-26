@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: apache
+spec:
+  to:
+    kind: Service
+    name: apache
+  tls:
+    termination: passthrough
