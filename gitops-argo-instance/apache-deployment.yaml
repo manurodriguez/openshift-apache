@@ -18,3 +18,10 @@ spec:
         name: apache
         ports:
         - containerPort: 8443
+        resources:
+          requests:
+            cpu: 100m 
+            memory: 200Mi 
+          limits:
+            cpu: 200m 
+            memory: 400Mi 
