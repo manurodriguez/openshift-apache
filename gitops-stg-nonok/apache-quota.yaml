@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: apache-quota-limits
+spec:
+  hard:
+    configmaps: "10"
+    replicationcontrollers: "10"
+    secrets: "10"
+    services: "10"
+    pods: "10"
+    requests.cpu: "1000m"
+    requests.memory: "1Gi"
+    limits.cpu: "2000m"
+    limits.memory: "2Gi"
